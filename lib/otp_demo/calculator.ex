@@ -15,3 +15,4 @@ defmodule OtpDemo.Calculator do
     send sender, {:ok, self(), add(number1, number2) }
   end
 end
+# Enum.map(1..200_000, fn(x) -> spawn(fn -> IO.puts OtpDemo.Calculator.square_root(x) end) end)
